@@ -1,0 +1,31 @@
+div.frame_buttons {
+    display: flex;
+    height: min-content;
+    width: min-content;
+}
+
+div.frame_buttons div {
+
+}
+
+div.frame_buttons svg {
+    margin: 0 5px 0 0;
+    height: 12px;
+    width: 12px;
+}
+
+div.frame_buttons svg > circle {
+    transition: fill 0.5s ease;
+}
+
+div.frame_button_close svg:hover > circle {
+    fill: #CC1717;
+}
+
+div.frame_button_hide svg:hover > circle {
+    fill: #C98217;
+}
+
+div.frame_button_screen svg:hover > circle {
+    fill: #30CF16;
+}
