@@ -2,6 +2,7 @@ package main
 
 import (
 	"embed"
+	"github.com/wailsapp/wails/v2/pkg/options/mac"
 	"github.com/wailsapp/wails/v2/pkg/options/windows"
 
 	"github.com/wailsapp/wails/v2"
@@ -36,6 +37,12 @@ func main() {
 			WebviewIsTransparent: true,
 			WindowIsTranslucent:  true,
 			BackdropType:         3,
+		},
+		Mac: &mac.Options{
+			WebviewIsTransparent: true,
+			WindowIsTranslucent:  true,
+			Appearance:           mac.NSAppearanceNameDarkAqua,
+			TitleBar:             mac.TitleBarHiddenInset(),
 		},
 	})
 

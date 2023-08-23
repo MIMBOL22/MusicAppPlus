@@ -1,0 +1,25 @@
+div.nav_element{
+    display: flex;
+}
+
+
+div.nav_element a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 1rem 10%;
+    color: rgba(200, 200, 200, 0.7);
+    transition: color 0.5s ease;
+    width: 100%;
+}
+
+div.nav_element a:hover{
+    color: rgb(200, 200, 200);
+}
+
+div.nav_element_active{
+    border-right: solid 5px;
+}
+div.nav_element_active a{
+    color: white;
+}
