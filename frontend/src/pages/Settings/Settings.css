@@ -1,7 +1,15 @@
 div.settings {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.oauth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+div.oauth input {
+    margin-right: 20px;
 }

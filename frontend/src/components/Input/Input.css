@@ -1,13 +1,24 @@
-div.input {
-
-}
-
-div.input input {
+input.input {
     background: rgba(0, 0, 0, 0);
     border: 0;
+    border-bottom: rgb(118, 118, 118) 2px solid;
     outline: 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    transition: border-bottom-color 500ms ease;
+    width: 200px;
 }
 
-div.input input:focus {
+
+input.input::placeholder {
+    transition: opacity 500ms ease;
+}
+
+input.input:focus {
     outline: none !important;
+    border-bottom: rgb(222, 222, 222) 2px solid;
+}
+
+input.input:focus::placeholder {
+    opacity: 0;
 }

@@ -1,0 +1,17 @@
+button.button {
+    background: none;
+    border: solid 1px #626262;
+    color: #b6b4b4;
+    height: min-content;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+button.button:hover {
+    border: solid 1px #b6b4b4;
+    color: #FFF;
+}
+
+button.button:active {
+    position: relative;
+    top: 2px;
+}

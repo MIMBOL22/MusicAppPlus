@@ -1,4 +1,3 @@
-import {ChangeEventHandler, useState} from "react";
 import "./Input.css"
 
 export interface InputProps {
@@ -9,18 +8,19 @@ export interface InputProps {
     success?: boolean;
     disabled?: boolean;
     placeholder?: string;
-    onChange?: ChangeEventHandler<HTMLInputElement>;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    type?: string;
+    className?: string;
+    value?: string;
 }
 
 export const Input = (props: InputProps): JSX.Element => {
-    const [inputText, setInputText] = useState("")
     return (
-        <div className="input">
-            <input
-                value={inputText}
-                onChange={(e) => setInputText(e.target.value)}
-                {...props}
-            />
-        </div>
+        <input
+            className={"input " + props.className}
+            value={props.value}
+            onChange={props.onChange}
+            {...props}
+        />
     ) as JSX.Element;
 };

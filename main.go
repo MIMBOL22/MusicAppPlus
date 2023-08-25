@@ -30,6 +30,8 @@ func main() {
 		BackgroundColour: &options.RGBA{R: 0, G: 0, B: 0, A: 205},
 		OnStartup:        app.startup,
 		Frameless:        true,
+		CSSDragProperty:  "widows",
+		CSSDragValue:     "1",
 		Bind: []interface{}{
 			app,
 		},
