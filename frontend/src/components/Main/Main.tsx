@@ -10,6 +10,9 @@ import {Tracks} from "../../pages/Tracks/Tracks.tsx";
 import {Artists} from "../../pages/Artists/Artists.tsx";
 import {Albums} from "../../pages/Albums/Albums.tsx";
 import {Playlists} from "../../pages/Playlists/Playlists.tsx";
+import {Settings} from "../../pages/Settings/Settings.tsx";
+
+import "./Main.css"
 
 export const Main = () => {
     return (
@@ -24,6 +27,7 @@ export const Main = () => {
                 <Route  path='/artists' element={<Artists/>}/>
                 <Route  path='/albums' element={<Albums/>}/>
                 <Route  path='/playlists' element={<Playlists/>}/>
+                <Route path='/settings' element={<Settings/>}/>
             </Routes>
         </div>
     );

@@ -1,0 +1,7 @@
+div.right_bar {
+    background: rgba(10, 10, 10, 0.3);
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    right: 0;
+}

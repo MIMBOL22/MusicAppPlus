@@ -1,0 +1,10 @@
+div.main {
+    display: flex;
+    width: 61.2%;
+    height: 100%;
+}
+
+div.main > div {
+    width: 100%;
+    height: 100%;
+}

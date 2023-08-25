@@ -13,6 +13,7 @@ const NavBar = () => {
         <NavElement name="Исполнители" link="/artists"/>
         <NavElement name="Альбомы" link="/albums"/>
         <NavElement name="Плейлисты" link="/playlists"/>
+        <NavElement name="Настройки" link="/settings"/>
     </div>
 };
 
