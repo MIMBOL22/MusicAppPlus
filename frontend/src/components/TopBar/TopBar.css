@@ -1,0 +1,31 @@
+div.top_bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+
+div.top_bar div {
+    margin: 0 30px;
+}
+
+div.top_bar_links {
+    display: flex;
+}
+
+div.top_bar_links a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 900;
+    margin: 0 15px;
+    color: rgba(200, 200, 200, 0.7);
+    transition: color 0.5s ease;
+}
+
+div.top_bar_links a:hover {
+    color: rgb(200, 200, 200);
+}
+
+div.top_bar_links a.active {
+    color: white;
+}

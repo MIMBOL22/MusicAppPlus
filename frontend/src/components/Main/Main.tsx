@@ -18,15 +18,15 @@ export const Main = () => {
     return (
         <div className="main">
             <Routes>
-                <Route  path='/' element={<Index/>}/>
-                <Route  path='/podcasts' element={<Podcasts/>}/>
-                <Route  path='/kids' element={<Kids/>}/>
-                <Route  path='/streams' element={<Streams/>}/>
-                <Route  path='/collections' element={<Collections/>}/>
-                <Route  path='/tracks' element={<Tracks/>}/>
-                <Route  path='/artists' element={<Artists/>}/>
-                <Route  path='/albums' element={<Albums/>}/>
-                <Route  path='/playlists' element={<Playlists/>}/>
+                <Route path='/' element={<Index/>}/>
+                <Route path='/podcasts' element={<Podcasts/>}/>
+                <Route path='/kids' element={<Kids/>}/>
+                <Route path='/streams' element={<Streams/>}/>
+                <Route path='/collections' element={<Collections/>}/>
+                <Route path='/tracks' element={<Tracks/>}/>
+                <Route path='/artists' element={<Artists/>}/>
+                <Route path='/albums' element={<Albums/>}/>
+                <Route path='/playlists' element={<Playlists/>}/>
                 <Route path='/settings' element={<Settings/>}/>
             </Routes>
         </div>
