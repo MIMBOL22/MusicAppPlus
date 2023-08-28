@@ -1,5 +1,5 @@
 import "./TopBar.css"
-import loupe from "../../assets/loupe.svg"
+import loupe from "../../../assets/loupe.svg"
 
 interface TopBarProps {
     links: string[];

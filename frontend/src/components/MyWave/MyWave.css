@@ -1,0 +1,33 @@
+div.my_wave {
+    background: rgba(12, 12, 12, 0.3);
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+}
+
+div.my_wave_left {
+    margin-left: 64px;
+}
+
+div.first_line {
+    display: flex;
+}
+
+img.my_wave_button {
+    height: 32px;
+    margin-right: 16px;
+}
+
+p.my_wave_title {
+    color: #FFF;
+    font-size: 1.75em;
+    margin: 0;
+}
+
+p.my_wave_subtitle {
+    color: rgba(200, 200, 200, 0.7);
+    font-size: 1.25em;
+    max-width: 22rem;
+    margin-left: 48px;
+}

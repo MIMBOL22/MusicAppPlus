@@ -3,6 +3,7 @@ import {Radios} from "./Radios/Radios.tsx";
 import {NewReleases} from "./NewReleases/NewReleases.tsx";
 import {Chart} from "./Chart/Chart.tsx";
 import {Mine} from "./Mine/Mine.tsx";
+import "./Index.css"
 
 import useLocalStorage from "use-local-storage";
 
@@ -29,15 +30,14 @@ export const Index = () => {
             name: "Чарт",
             element: Chart,
         },
-
     ]
 
     const [linkId, setLinkId] = useLocalStorage("linkId", 0);
     const CurrentElement = subPages[linkId].element;
     return (
-        <div className="main_page">
+        <div className="index_page">
             <TopBar activeLinkId={linkId} onChangeLink={setLinkId} links={subPages.map(a => a.name)}/>
-            <div className="main_page_container">
+            <div className="index_page_container">
                 <CurrentElement/>
             </div>
         </div>
