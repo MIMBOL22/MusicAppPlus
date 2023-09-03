@@ -4,8 +4,11 @@ import {RightBar} from "./components/RightBar/RightBar.tsx";
 import {ToastContainer} from "react-toastify";
 
 import 'react-toastify/dist/ReactToastify.min.css';
+import {useYMInit} from "./ym_api/useYMInit.ts";
 
 export const App = () => {
+    useYMInit();
+
     return (
         <>
             <Header/>

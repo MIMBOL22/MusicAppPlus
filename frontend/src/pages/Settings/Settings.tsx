@@ -4,7 +4,7 @@ import {Input} from "../../components/Input/Input.tsx";
 import useLocalStorage from "use-local-storage";
 
 export const Settings = () => {
-    const [token, setToken] = useLocalStorage("token", "");
+    const [token, setToken] = useLocalStorage("ym_token", "");
     return (
         <div className="settings">
             <div className="oauth">

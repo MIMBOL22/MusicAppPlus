@@ -44,6 +44,10 @@ func (a *App) startup(ctx context.Context) {
 			endpoint = "https://storage.mds.yandex.net"
 		}
 
+		if strings.Contains(r.URL.Path, "info") {
+			endpoint = "https://login.yandex.ru"
+		}
+
 		//create a new request
 		req, err := http.NewRequest(r.Method, endpoint+r.URL.Path, r.Body)
 		if err != nil {
