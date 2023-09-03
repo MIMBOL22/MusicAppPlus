@@ -1,0 +1,28 @@
+div.userbar{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+div.userbar_text{
+
+}
+p.userbar_fullname{
+
+}
+p.userbar_username{
+
+}
+div.userbar_avatar{
+
+}
+img.userbar_avatar{
+    border-radius: 9999px;
+    height: 3rem;
+    margin: 0.2rem;
+}
+img.userbar_plus_marker{
+    position: absolute;
+    border-radius: 9999px;
+    height: 3.4rem;
+}
