@@ -10,8 +10,8 @@ export const UserBar = () => {
     return (
         <div className="userbar">
             <div className="userbar_text">
-                <p className="userbar_fullname"></p>
-                <p className="userbar_username"></p>
+                <p className="userbar_fullname">{initInfo.firstName} {(initInfo.secondName|| "")[0] }.</p>
+                <p className="userbar_username">{initInfo.login}</p>
             </div>
             <div className="userbar_avatar">
                 <img

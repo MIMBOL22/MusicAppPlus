@@ -5,6 +5,7 @@ export const Mine = () => {
     return (
         <>
             <MyWave/>
+
         </>
     );
 };

@@ -1,27 +1,51 @@
-div.userbar{
+div.userbar {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: end;
+    margin-right: 5%;
+    margin-top: 7%;
 }
 
-div.userbar_text{
+div.userbar_text {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+p.userbar_fullname {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+p.userbar_username {
+    margin: 0.25em 0.25em 0 0;
+    font-size: 0.75em;
+    color: rgba(200, 200, 200, 0.7);
+}
+
+
+p.userbar_fullname {
 
 }
-p.userbar_fullname{
+
+p.userbar_username {
 
 }
-p.userbar_username{
 
+div.userbar_avatar {
+    display: flex;
+    justify-content: center;
 }
-div.userbar_avatar{
 
-}
-img.userbar_avatar{
+img.userbar_avatar {
     border-radius: 9999px;
     height: 3rem;
     margin: 0.2rem;
 }
-img.userbar_plus_marker{
+
+img.userbar_plus_marker {
     position: absolute;
     border-radius: 9999px;
     height: 3.4rem;
