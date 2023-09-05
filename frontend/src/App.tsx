@@ -5,12 +5,16 @@ import {ToastContainer} from "react-toastify";
 
 import 'react-toastify/dist/ReactToastify.min.css';
 import {useYMInit} from "./ym_api/useYMInit.ts";
+import {Background} from "./components/Background/Background.tsx";
+import useLocalStorage from "use-local-storage";
 
 export const App = () => {
+    const [background] = useLocalStorage("background_enable",false);
     useYMInit();
 
     return (
         <>
+            {background && <Background/>}
             <Header/>
             <Main/>
             <RightBar/>
