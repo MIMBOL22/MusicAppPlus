@@ -16,7 +16,7 @@ div.top_bar_links {
 div.top_bar_links a {
     text-decoration: none;
     font-size: 22px;
-    font-weight: 900;
+    font-weight: 600;
     margin: 0 15px;
     color: rgba(200, 200, 200, 0.7);
     transition: color 0.5s ease;

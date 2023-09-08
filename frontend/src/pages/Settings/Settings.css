@@ -8,8 +8,10 @@ div.oauth {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-div.oauth input {
+div.oauth > input {
     margin-right: 20px;
+    margin-bottom: 3rem;
 }

@@ -7,13 +7,16 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import {useYMInit} from "./ym_api/useYMInit.ts";
 import {Background} from "./components/Background/Background.tsx";
 import useLocalStorage from "use-local-storage";
+import {WindowsFrameButtons} from "./components/WindowsFrameButtons/WindowsFrameButtons.tsx";
 
 export const App = () => {
     const [background] = useLocalStorage("background_enable",false);
     useYMInit();
 
+
     return (
         <>
+            <WindowsFrameButtons/>
             {background && <Background/>}
             <Header/>
             <Main/>

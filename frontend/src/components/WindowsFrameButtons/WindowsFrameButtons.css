@@ -1,0 +1,26 @@
+div.windows_frame_buttons {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+div.windows_frame_buttons div{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+div.windows_frame_buttons div:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+div.windows_frame_buttons > div > img{
+    filter: invert(1);
+}
+
+
+div.windows_frame_button_hide{
+    padding: 15px 15px !important;
+}

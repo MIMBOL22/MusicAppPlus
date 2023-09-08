@@ -14,10 +14,10 @@ export interface InputProps {
     value?: string;
 }
 
-export const Input = (props: InputProps): JSX.Element => {
+export const Input = (props: InputProps) => {
     return (
         <input
-            className={"input " + props.className}
+            className={"input"}
             value={props.value}
             onChange={props.onChange}
             {...props}

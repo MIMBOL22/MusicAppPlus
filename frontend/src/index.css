@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 *{
     color: white;
-    font-family: Verdana, sans-serif;
+    font-family: Inter, Verdana, sans-serif;
 }
 
 body {

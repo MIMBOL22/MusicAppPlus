@@ -6,4 +6,16 @@ div.playlist {
 
 img.playlist_logo {
     max-height: 13rem;
+    border-radius: 0.75rem;
+}
+
+p.playlist_title {
+    margin: 0.5rem 0;
+    font-size: 1.35em;
+}
+
+p.playlist_subtitle {
+    margin: 0 0 1rem;
+    font-size: 0.8em;
+    color: rgba(200, 200, 200, 0.7);
 }
