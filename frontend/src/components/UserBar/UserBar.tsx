@@ -1,11 +1,11 @@
 import "./UserBar.css"
 import useLocalStorage from "use-local-storage";
-import {AccountInfo} from "../../interfaces/AccountInfo.ts";
+import {IAccountInfo} from "../../interfaces/IAccountInfo.ts";
 import default_logo from "../../../assets/default_avatar.png"
 import plus from "../../../assets/plus.svg"
 
 export const UserBar = () => {
-    const [initInfo] = useLocalStorage<AccountInfo>("init_info", {})
+    const [initInfo] = useLocalStorage<IAccountInfo>("init_info", {})
 
     return (
         <div className="userbar">

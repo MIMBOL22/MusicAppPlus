@@ -3,21 +3,21 @@ export interface AvatarInfo {
     is_avatar_empty: boolean;
 }
 
-export interface AccountStatus {
-    account:        Account;
+export interface IAccountStatus {
+    account: IAccount;
     permissions:    Permissions;
-    subscription:   Subscription;
+    subscription: ISubscription;
     subeditor:      boolean;
     subeditorLevel: number;
     pretrialActive: boolean;
-    masterhub:      Masterhub;
-    plus:           Plus;
+    masterhub: IMasterhub;
+    plus: IPlus;
     hasOptions:     string[];
     defaultEmail:   string;
     userhash:       string;
 }
 
-export interface Account {
+export interface IAccount {
     now:                  Date;
     uid:                  number;
     login:                string;
@@ -29,57 +29,57 @@ export interface Account {
     birthday:             Date;
     serviceAvailable:     boolean;
     hostedUser:           boolean;
-    passportPhones:       PassportPhone[];
+    passportPhones: IPassportPhone[];
     registeredAt:         Date;
     child:                boolean;
     nonOwnerFamilyMember: boolean;
 }
 
-export interface PassportPhone {
+export interface IPassportPhone {
     phone: string;
 }
 
-export interface Masterhub {
+export interface IMasterhub {
     activeSubscriptions:    any[];
     availableSubscriptions: any[];
 }
 
-export interface Permissions {
+export interface IPermissions {
     until:   Date;
     values:  string[];
     default: string[];
 }
 
-export interface Plus {
+export interface IPlus {
     hasPlus:             boolean;
     isTutorialCompleted: boolean;
 }
 
-export interface Subscription {
-    autoRenewable:             AutoRenewable[];
-    nonAutoRenewableRemainder: NonAutoRenewableRemainder;
+export interface ISubscription {
+    autoRenewable: IAutoRenewable[];
+    nonAutoRenewableRemainder: INonAutoRenewableRemainder;
     hadAnySubscription:        boolean;
     canStartTrial:             boolean;
     mcdonalds:                 boolean;
 }
 
-export interface AutoRenewable {
+export interface IAutoRenewable {
     expires:       Date;
     vendor:        string;
     vendorHelpURL: string;
     productID:     string;
-    product:       Product;
+    product: IProduct;
     orderID:       number;
     finished:      boolean;
 }
 
-export interface Product {
+export interface IProduct {
     productID:            string;
     type:                 string;
     commonPeriodDuration: string;
     duration:             number;
     trialDuration:        number;
-    price:                Price;
+    price: IPrice;
     family:               boolean;
     plus:                 boolean;
     feature:              string;
@@ -87,11 +87,11 @@ export interface Product {
     debug:                boolean;
 }
 
-export interface Price {
+export interface IPrice {
     amount:   number;
     currency: string;
 }
 
-export interface NonAutoRenewableRemainder {
+export interface INonAutoRenewableRemainder {
     days: number;
 }

@@ -1,0 +1,7 @@
+div.mine_playlists {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}

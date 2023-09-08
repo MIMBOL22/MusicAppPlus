@@ -3,7 +3,8 @@ export enum AccountAuthStatus {
     loading = "loading",
     error = "error"
 }
-export interface AccountInfo {
+
+export interface IAccountInfo {
     auth_status?: AccountAuthStatus;
     uid?: number;
     secondName?: string;

@@ -1,16 +1,16 @@
 import useLocalStorage from "use-local-storage";
 import {fetcher} from "./fetcher.ts";
 import useSWR from 'swr'
-import {AccountStatus, AvatarInfo} from "./interfaces/AccountStatus.ts";
-import {AccountAuthStatus, AccountInfo} from "../interfaces/AccountInfo.ts";
+import {AvatarInfo, IAccountStatus} from "./interfaces/IAccountStatus.ts";
+import {AccountAuthStatus, IAccountInfo} from "../interfaces/IAccountInfo.ts";
 import {useEffect} from "react";
 
 export function useYMInit(token: string = "") {
     const [ymToken, _] = useLocalStorage("ym_token",token);
-    const [initInfo, setInitInfo] = useLocalStorage<AccountInfo>("init_info", {})
+    const [initInfo, setInitInfo] = useLocalStorage<IAccountInfo>("init_info", {})
 
     const y_avatar = useSWR<AvatarInfo, string>(['/info?format=json', ymToken], fetcher);
-    const ym_status = useSWR<AccountStatus, string>(['/account/status', ymToken], fetcher);
+    const ym_status = useSWR<IAccountStatus, string>(['/account/status', ymToken], fetcher);
 
     useEffect(() => {
         console.log("ym",ym_status.data, ym_status.isLoading, ym_status.error)

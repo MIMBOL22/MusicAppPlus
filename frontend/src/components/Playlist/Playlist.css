@@ -1,0 +1,9 @@
+div.playlist {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+img.playlist_logo {
+    max-height: 13rem;
+}

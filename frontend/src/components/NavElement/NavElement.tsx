@@ -1,10 +1,10 @@
 import 'react';
 import "./NavElement.css"
-import {NavElementProps} from "../../interfaces/NavElementProps.ts";
+import {INavElementProps} from "../../interfaces/INavElementProps.ts";
 import {Link, useLocation} from "react-router-dom";
 import {useEffect, useState} from "react";
 
-const NavElement = (item:NavElementProps) => {
+const NavElement = (item: INavElementProps) => {
     const location = useLocation();
 
     const [isActive, setIsActive] = useState(false);
