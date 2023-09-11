@@ -2,8 +2,7 @@ div.userbar {
     display: flex;
     width: 90%;
     justify-content: end;
-    margin-right: 5%;
-    margin-top: 18%;
+    margin-top: 13%;
 }
 
 div.userbar_text {

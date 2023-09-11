@@ -16,6 +16,10 @@ div.windows_frame_buttons div:hover{
     background: rgba(255,255,255,0.2);
 }
 
+div.windows_frame_button_close:hover{
+    background: rgba(255,255,255,0.2);
+}
+
 div.windows_frame_buttons > div > img{
     filter: invert(1);
 }
