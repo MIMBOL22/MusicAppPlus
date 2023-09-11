@@ -13,6 +13,7 @@ import {Playlists} from "../../pages/Playlists/Playlists.tsx";
 import {Settings} from "../../pages/Settings/Settings.tsx";
 
 import "./Main.css"
+import {Player} from "../Player/Player.tsx";
 
 export const Main = () => {
     return (
@@ -29,6 +30,7 @@ export const Main = () => {
                 <Route path='/playlists' element={<Playlists/>}/>
                 <Route path='/settings' element={<Settings/>}/>
             </Routes>
+            <Player/>
         </div>
     );
 };

@@ -1,0 +1,10 @@
+div.player{
+    background: rgba(28, 28, 28, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    position: absolute;
+    bottom: 3%;
+    margin-left: 2%;
+    width: 55% !important;
+    height: 8% !important;
+}
